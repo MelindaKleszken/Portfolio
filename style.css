@@ -21,6 +21,8 @@ html {
     color: white;
   }
   h3 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16pt;
     margin: 0;
   }
   a {

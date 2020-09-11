@@ -1,305 +1,368 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Titillium Web', sans-serif;
+  
+  width: 100%;
+  
+}
+h1, h2, h3, h4 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+h1 {
+  font-size: 60px;
+}
+h2 {
+  font-size: 40px;
+  
+  color: white;
+}
+h3 {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 30px;
+  
+}
+h4{
+  text-align: left;
+}
+
+a {
+  color: white;
+}
+a:hover {
+  color: #52d6f4;
+}
+ul {
+  list-style: none;
+}
+
+
+
+
+.grow {
+  transition: all .2s ease-in-out;
+}
+.grow-icon {
+  transition: all .1s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.05);
+}
+.grow-icon:hover {
+  transform: scale(1.2);
+}
+
+#text-link:hover {
+  text-decoration: none;
+  color: #52d6f4;
+}
+#text-link {
+  color: white;
+}
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 20px 20px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+  
+
+/* Header and Footer*/
+header, footer, main {
+  /*background-image:
+  -webkit-linear-gradient(left,rgb(241, 89, 89),rgb(60, 60, 236));*/
+  color: white;
+  background:#363538;
+
+}
+/* header */
+header {
+  padding-top: 50px;
+  position: relative;
+}
+header p  {
+  font-weight: 100;
+}
+header h1, header h2 {
+  color: white;
+  
+}
+.profile-img {
+  border-radius: 40%;
+  padding: 10px;
+  width: 100%;
+  max-width: 250px;
+  height:100%;
+}
+
+
+/* footer */
+footer {
+  text-align: center;
+  background:#363538;
+}
+
+#footer-header {
+  font-size: 28px;
+  font-weight: 300;
+}
+.contact-info a {
+  padding: 10px;
+  display: inline-block;
+}
+/* welcome-section*/
+
+#welcome-section {
+  font-size: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height: 100vh;
+  background:#363538;
+  color:black;
+}
+#welcome-section p{
+  padding-left: 10px;
+  color: #52d6f4
+}
+
+
+/* Navigation */
+.nav {
+  background:#52d6f4;
+  position: fixed;
+  justify-content: flex-end;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+.nav-list {
+  display: flex;
+  margin: 0 1rem;
+}
+.nav-list a {
+  display: block;
+  padding: 15px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color:#363538;
+  font-size: 1.2rem;
+}
+
+nav a:hover{
+  background:#363538;
+  color:white;
+  text-decoration: none;
+}
+/* about section*/
+.about {
+  padding-top: 50px;
+  position: relative;
+  color: white;
+  background:#444;
+  width: 100%;
+}
+
+#about-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 20px;
+}
+
+.about p  {
+  font-weight: 100;
+}
+
+/* Projects
+-------------------------*/
+.projects {
+  /*background-image:
+  -webkit-linear-gradient(right, rgb(243, 243, 103), #22ffa3);*/
+  background:#444;
+  /*background-size: cover;*/
+}
+.project-image{
+  width:100%;
+}
+
+p + h3 {
+  margin-top: 30px;
+}
+h3 {
+  margin-bottom: 20px;
+}
+
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top: 0;
+  padding: 20px 30px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.project {
+  padding: 2px 4px;
+  background: rgba(73, 73, 73, 0.5);
+  border-radius: 10px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  color: white;
+}
+
+.project:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+/* Skills
+------------------------*/
+.skills{
+  /* background-image:url(img/skills.jpg);
+  background-size: cover;*/
+  background:#363538;       
+}
+
+.list-inline{
+  padding-left: 0;
+  list-style: none;
+  color: white;
+}
+  
+.list-icons{
+  font-size: 3rem;
+}
+
+li{
+  text-align: match-parent,
+  -webkit-match-parent;
+}
+
+.list.inline-item:not(:last-child){
+  margin-right: 1px;
+}
+
+.list-inline-item{
+  display: inline-block;
+  transition: all .1s ease-in-out;
+}
+
+.list-inline-item:hover{
+  transform: scale(1.3);
+  color: #52d6f4;
+}
+
+.list-inline-item > .esri-img{
+  
+  height: 48px;
+  margin-left: 10px;
+}
+
+
+/* Media Queries
+-------------------------*/
+@media (min-width: 900px) {
+  /*.col-narrow {
+    margin-top: 5%;
+    width: 20%;
+    float: left;
   }
-  *, *:before, *:after {
-    box-sizing: inherit;
+  .col-wide {
+    width: 100%;
+    float: left;
+  }*/
+  
+  
+  .project {
+    margin: 0 15% 15px 15%;
+  }
+}
+  
+@media (max-width: 899px){
+  header {
+    text-align: center;
+  }
+  .welcome-section{
+    display: block;
+  } /*de editat aici*/
+  .about-text{
+    margin: 0 15% 15px 15%;
+  }
+  .about{
+    padding-top: 70px;
+  }
+  .nav {
+    justify-content: center;
+  }
+  .nav-list {
+    margin: 0 rem;
+  }
+  .nav-list a {
+    align-items: flex-start;
+    display: inline-flex;
+    font-weight: 700;
+    font-size: 80%;
+  }
+/* 1200px / 16px = 75em */
+/*@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}*/
+
+/* 980px / 16px = 61.25em */
+/*@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
   }
   body {
-    font-family: 'Titillium Web', sans-serif;
-    margin: 0;
-    
-  }
-  h1, h2 {
-    font-family: 'Titillium Web', sans-serif;
-    font-weight: 400;
     text-align: center;
   }
-  h1 {
-    font-size: 60px;
+  .about-text{
+    margin: 0 15% 15px 15%;
   }
-  h2 {
-    font-size: 40px;
-    margin-top: 0;
-    color: white;
+  .about{
+    padding-top: 70px;
   }
-  h3 {
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 16pt;
-    margin: 0;
-  }
-  a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-  }
-  .a:hover {
-    text-decoration: none;
-    color: red;
-  }
-  
+}
 
+/* 460px / 16px = 28.75em */
+/*@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}*/
 
-
-  .grow {
-    transition: all .2s ease-in-out;
-  }
-  .grow-icon {
-    transition: all .1s ease-in-out;
-  }
-  .grow:hover {
-    transform: scale(1.05);
-  }
-  .grow-icon:hover {
-    transform: scale(1.2);
-  }
-  
-  /*#text-link:hover {
-    text-decoration: none;
-    color: #52d6f4;*/
-  }
-  #text-link {
-    color: white;
-  }
-  .content-wrap {
-    max-width: 950px;
-    margin: 0 auto;
-    padding: 20px 20px;
-    overflow: hidden;
-    text-align: center;
-  }
-
-  .uppercase {
-    text-transform: uppercase;
-  }
-  
-  /* Download button */
-  .btn {
-    text-decoration: none;
-    background: white;
-    color: white;
-    padding: 10px;
-    display: inline-block;
-  }
-  .btn:hover {
-    background: white;
-    /*color: #EF233C;*/
-    color: #1d5e03;
-  }
-  
-  
-  /* Header and Footer*/
-  header, footer {
-    /*background-image:
-    -webkit-linear-gradient(left,rgb(241, 89, 89),rgb(60, 60, 236));*/
-    color: white;
-    background:#444;
-  }
-  /* header */
-  header {
-    padding-top: 50px;
-    position: relative;
-  }
-  header p  {
-    font-weight: 100;
-  }
-  header h1, header h2 {
-    color: white;
-    margin: 0;
-  }
-  .profile-img {
-    border-radius: 40%;
-    padding: 10px;
-    width: 100%;
-    max-width: 250px;
-    height:100%;
-  }
-  .download {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
-  
-  /* footer */
-  footer {
-    text-align: center;
-    background:#363538;
-  }
-  
-  #footer-header {
-    font-size: 28px;
-    font-weight: 300;
-  }
-  .contact-info a {
-    padding: 10px;
-    display: inline-block;
-  }
-  /* welcome-section*/
-
-  #welcome-section {
-    font-size: 28px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background:#363538;
-    color:black;
-  }
-  #welcome-section p{
-    padding-left: 50px;
-    color: #52d6f4
-  }
-  
-  
-  /* Navigation */
-  nav {
-    text-align: center;
-    background:#52d6f4;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-  }
-  nav a {
-    display: inline-block;
-    padding: 15px 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 700;
-  }
-
-  .nav a:hover{
-    background: red;
-  }
-  /* about section*/
-  .about {
-    padding-top: 50px;
-    position: relative;
-    padding-top: 50px;
-    color: white;
-    background:#444;
-    width: 100%;
-  }
-
-  .about p  {
-    font-weight: 100;
-  }
-  
-  /* Projects
-  -------------------------*/
-  .projects {
-    /*background-image:
-    -webkit-linear-gradient(right, rgb(243, 243, 103), #22ffa3);*/
-    background:#444;
-    /*background-size: cover;*/
-  }
-  .project-image{
-    width:100%;
-  }
-  
-  p + h3 {
-    margin-top: 30px;
-  }
-  h3 {
-    margin-bottom: 20px;
-  }
-
-  .iframe-container{
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-    height: 0;
-  }
-  .iframe-container iframe{
-    position: absolute;
-    top: 0;
-    padding: 20px 30px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  .project {
-    padding: 2px 4px;
-    background: rgba(73, 73, 73, 0.5);
-    border-radius: 10px;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    margin-bottom: 15px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-    color: white;
-  }
-  
-  .project:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  }
-
-  
-  /* Skills
-  ------------------------*/
-  .skills{
-    /* background-image:url(img/skills.jpg);
-    background-size: cover;*/
-    background:#363538;       
-  }
-  
-  .list-inline{
-    padding-left: 0;
-    list-style: none;
-    color: white;
-  }
-    
-  .list-icons{
-    font-size: 3rem;
-  }
-
-  li{
-    text-align: match-parent,
-    -webkit-match-parent;
-  }
-  
-  .list.inline-item:not(:last-child){
-    margin-right: 1px;
-  }
-
-  .list-inline-item{
-    display: inline-block;
-    transition: all .1s ease-in-out;
-  }
-
-  .list-inline-item:hover{
-    transform: scale(1.3);
-    color: #52d6f4;
-  }
-
-  .list-inline-item > .esri-img{
-    
-    height: 48px;
-    margin-left: 10px;
-  }
-
-
-  /* Media Queries
-  -------------------------*/
-  @media (min-width: 900px) {
-    .col-narrow {
-      margin-top: 5%;
-      width: 20%;
-      float: left;
-    }
-    .col-wide {
-      width: 70%;
-      float: left;
-      padding-left: 20px;
-    }
-    .project {
-      margin: 0 15% 15px 15%;
-    }
-  }
-  @media (max-width: 899px){
-    header {
-      text-align: center;
-    }
-
-  }
+}

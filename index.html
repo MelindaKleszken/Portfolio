@@ -20,23 +20,36 @@
     <body>
                              
         <header>  
-            <nav id="navbar"> 
-                <a href="#welcome-section">Welcome</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+            <nav id="navbar" class="nav" > 
+                <ul class="nav-list">
+                    <li>
+                      <a href="#welcome-section">Welcome</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                  </ul>
             </nav>
             <section id="welcome-section" class="welcome-section">
-                <div class="container mt-4">
+                <!--<div class="container mt-4"> -->
                     <div class="row justify-content-center"> 
                         <div class= "col-md-4">
                             <img class="profile-img" src="img/mel.jpg" alt="Melinda Marian"></div>
-                        <div class="col-md-6 ">
+                        <div class= "col-md-1"> <p> </p></div>
+                        <div class="col-md-7 ">
                         <h1>Hi, I am Melinda </h1>
                         <p>a web developer</p>
                         </div>
-                    </div>
+                    <!--</div>-->
                 </div>
             </section>
         </header>
@@ -44,27 +57,24 @@
             <section id="about" class="about">
                 <div class="row justify-content-center">
                     <div class="col-md-10">
-                        <h1>About </h1>
-                        <p style="text-align:left;"> <h3>I am a Junior Software Developer, an inquisitive learner who found interest in Cloud and Web development. Working towards becoming a Full Stack Developer by June 2021.</h3>
-                        </p>
-                        <p style="text-align:left;">My journey into tech start at Puma Teamwear as a graphic designer and been expose to WordPress. 
-                            I became curious about its more in-depth functions and how it’s created. For a better understanding, I studied WordPress, then created a <a href="https://saniob.wordpress.com/" target="_blank"> <u>website for my home village</u></a>. 
-                        </p>
-                        <p style="text-align:left;">As I understood more, my passion grew and I became eager to learn more. I came across CodeandStuff a coding and networking community for women and non-binary developers and code newbies in Manchester.
-                            The community allowed me to deepen my knowledge of HTML, CSS and JavaScript, and expose me to various online schools, such as Codecademy, W3Schools, and SoloLearn,
-                            and shortly after I developed my <a href="https://s3-eu-west-1.amazonaws.com/melindamarian.com/Travel+List/index.html" target="_blank"> <u>first website</u> </a> and was able to utilize skills like Agile and TDD (Test Driven Development) which I learned while attending CodeandStuff weekly.
-                            The community also helped me improve my communication skills, socialise and introduced me to fellow learners and developers in the industry.
-                        </p>
-                        <p style="text-align:left;"> I then became very proactive about my learning and I applied and was selected for the AWS Re/start programme. 
-                        </p>
-                        <p style="text-align:left;"> I am constantly learning and have built <a href="https://melindamarian.com/#projects" target="_blank"> <u>several projects </u></a>along the way. 
-                            I am very flexible and have an aptitude to learn because I understand tech is constantly evolving, and I have taken part in various events to learn about new technologies, including IOT, containers, GIS and autonomous services.  
-                        </p>
-                        <p style="text-align:left;"> I am resilient, curious and enthusiastic programmer with excellent communication and problem-solving skills, who aspire to make positive impact. 
-                            I strive to build strong relationships based on honest communication, attention to details and flexible approach. During previous roles, I developed a hardworking, organised and positive attitude, which I’m confident is a great addition to a team.
-                        </p>
-                        <p style="text-align:left;"> I am motivated to take a step further to my personal development and career progression and looking to join a company where I can put to action my skills and knowledge and face new challenges, as a Junior Software Developer.
-                        </p>
+                        <h2>About </h2>
+                        <section id="about-text">
+                            <p > <h4>I am a Junior Software Developer, an inquisitive learner who found interest in Cloud and Web development. Working towards becoming a Full Stack Developer by June 2021.</h4>
+                            </p>
+                            <p >My journey into tech start at Puma Teamwear as a graphic designer and been expose to WordPress. 
+                                I became curious about its more in-depth functions and how it’s created. For a better understanding, I studied WordPress, then created a <a href="https://saniob.wordpress.com/" target="_blank"> <u>website for my home village</u></a>. 
+                            </p>
+                            <p >As I understood more, my passion grew and I became eager to learn more. I came across CodeandStuff a coding and networking community for women and non-binary developers and code newbies in Manchester.
+                                The community allowed me to deepen my knowledge of HTML, CSS and JavaScript, and expose me to various online schools, such as Codecademy, W3Schools, and SoloLearn,
+                                and shortly after I developed my <a href="https://s3-eu-west-1.amazonaws.com/melindamarian.com/Travel+List/index.html" target="_blank"> <u>first website</u> </a> and was able to utilize skills like Agile and TDD (Test Driven Development) which I learned while attending CodeandStuff weekly.
+                                The community also helped me improve my communication skills, socialise and introduced me to fellow learners and developers in the industry.
+                            </p>
+                            <p > I am very flexible and have an aptitude to learn because I understand tech is constantly evolving, and I have taken part in various events to learn about new technologies, including IOT, containers, GIS and autonomous services. 
+                            </p>
+                            <p > I am resilient, curious and enthusiastic programmer with excellent communication and problem-solving skills, who aspire to make positive impact. I strive to build strong relationships based on honest communication, attention to details and flexible approach. During previous roles, I developed a hardworking, organised and positive attitude, which I’m confident is a great addition to a team. 
+                                I am motivated to take a step further to my personal development and career progression and looking to join a company where I can put to action my skills and knowledge and face new challenges, as a Junior Software Developer.
+                            </p>
+                        </section>
                     </div>
                     </div>
                 </div>
@@ -234,7 +244,7 @@
         </main>
         <footer id="contact">
             <div class="content-wrap">
-                <h3 id="footer-header">Contact</h3>
+                <h2 id="footer-header">Contact</h2>
                 
                 <div class="contact-info">
                     <a href="mailto:melindakleszken1021@gmail.com" alt="melindakleszken1021@gmail.com">

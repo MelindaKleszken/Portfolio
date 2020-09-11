@@ -19,24 +19,32 @@
     </head>
     <body>
                              
-        <header id="about">  
-           <nav> 
+        <header>  
+            <nav id="navbar"> 
+                <a href="#welcome-section">Welcome</a>
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
-             </nav>
-             
-             <div class="container mt-4">
-                <div class="row justify-content-center"> 
-                    <div class="col-md-8 offset-md-4">
-                       <h1>About me </h1>
+            </nav>
+            <section id="welcome-section" class="welcome-section">
+                <div class="container mt-4">
+                    <div class="row justify-content-center"> 
+                        <div class= "col-md-4">
+                            <img class="profile-img" src="img/mel.jpg" alt="Melinda Marian"></div>
+                        <div class="col-md-6 ">
+                        <h1>Hi, I am Melinda </h1>
+                        <p>a web developer</p>
+                        </div>
                     </div>
                 </div>
+            </section>
+        </header>
+        <main>
+            <section id="about" class="about">
                 <div class="row justify-content-center">
-                    <div class= "col-md-4">
-                        <img class="profile-img" src="img/mel.jpg" alt="Melinda Marian"></div>
-                    <div class="col-md-8">
+                    <div class="col-md-10">
+                        <h1>About </h1>
                         <p style="text-align:left;"> <h3>I am a Junior Software Developer, an inquisitive learner who found interest in Cloud and Web development. Working towards becoming a Full Stack Developer by June 2021.</h3>
                         </p>
                         <p style="text-align:left;">My journey into tech start at Puma Teamwear as a graphic designer and been expose to WordPress. 
@@ -58,10 +66,9 @@
                         <p style="text-align:left;"> I am motivated to take a step further to my personal development and career progression and looking to join a company where I can put to action my skills and knowledge and face new challenges, as a Junior Software Developer.
                         </p>
                     </div>
-                  </div>
+                    </div>
                 </div>
-        </header>
-        <main>
+            </section>
             <section id="skills" class="skills pt-5">
                 <div class="content-wrap">
                     <h2>SKILLS</h2>
@@ -129,22 +136,21 @@
             <section id="projects" class="projects pt-5">
                 <div class="content-wrap">
                     <h2>PROJECTS</h2>
-                    <a href="https://master.dubarph8hphhk.amplifyapp.com" target="_blank">
+                    <div class="project-tile">
                         <div class="project grow">
                             <h3>Wildrydes Application</h3>
                             <div class="container project-pictures">
                                 <div class="row justify-content-center">
                                     <div class="col-md-8"><img class="project-image" src="img/wildrydes.JPG" alt="wildrydes"></div>
-                                    <!-- <div class="col-md-2"></div>
-                                    <div class="col-md-5"><img class="project-image" src="img/wildrydes2.JPG" alt="wildrydes2"> </div> -->
                                 </div>
                             </div>
                             <p>
-                                Serverless web application that enables users to request unicorn rides from the Wild Rydes fleet. Built with HTML5, CSS3, JS and AWS services. <a href="https://github.com/MelindaKleszken/aws-serverless-workshops/tree/master/WebApplication"> <b>[GitHub Code]</b></a>
+                                Serverless web application that enables users to request unicorn rides from the Wild Rydes fleet. Built with HTML5, CSS3, JS and AWS services.
+                                <a href="https://github.com/MelindaKleszken/aws-serverless-workshops/tree/master/WebApplication" target="_blank"> <b>[GitHub Code]</b></a>
                             </p>
                         </div>
-                    </a>
-                    <a href="https://github.com/MelindaKleszken/connect-lex-integration-bookappointment" target="_blank">
+                    </div>
+                    <div class="project-tile">
                         <div class="project grow">
                             <h3>Contact Center</h3>
                             <div class="container project-pictures">
@@ -154,11 +160,11 @@
                             </div>
                             <p>
                                 Contact center for booking and checking appointment created with AWS Connect/Lex/Lambda.
+                                <a href="https://github.com/MelindaKleszken/connect-lex-integration-bookappointment" target="_blank"> <b>[GitHub Code]</b></a>
                             </p>
-                            <p>To try it, call:<b> +44 800 098 8570.</b> Please note: available appointment types are cleaning or whitening.</p>
                         </div>
-                    </a>
-                    <a href="https://github.com/MelindaKleszken/CatDogMouseGame/blob/master/catgame.py" target="_blank">
+                    </div>
+                    <div class="project-tile">
                         <div class="project grow">
                             <h3>Cat Game</h3>
                             <div class="container project-pictures">
@@ -168,10 +174,11 @@
                             </div>
                             <p>
                                 Cat Game is a simple cat-mouse-dog game realized with Python. 
+                                <a href="https://github.com/MelindaKleszken/CatDogMouseGame/blob/master/catgame.py" target="_blank"> <b>[GitHub Code]</b></a>
                             </p>
                         </div>
-                    </a>
-                    <a href="https://youtu.be/GMWwRlAtPMs" target="_blank">
+                    </div>
+                    <div class="project-tile">
                         <div class="project grow">
                             <h3>Oso Mud Slide</h3>
                             <div class="iframe-container">
@@ -181,8 +188,8 @@
                                 Flythrough Animation created for ESRI Cartography MOOC. 
                             </p>
                         </div>
-                    </a>
-                    <a href="https://www.youtube.com/watch?v=6ItduzYoY6o" target="_blank">
+                    </div>
+                    <div class="project-tile">
                         <div class="project grow">
                             <h3>Race Across Atlantic, 1770</h3>
                             <div class="iframe-container">
@@ -192,8 +199,8 @@
                                 Stop-motion-style animation created for ESRI Cartography MOOC. 
                             </p>
                         </div>
-                    </a>
-                    <a href="https://saniob.wordpress.com/" target="_blank">
+                    </div>
+                    <div class="project-tile">
                         <div class="project grow">
                             <h3>Saniob - Wordpress website</h3>
                             <div class="container project-pictures">
@@ -203,11 +210,12 @@
                             </div>
                             <p>
                                 This website was created about my home village - Saniob, using Wordpress.
+                                <a href="https://saniob.wordpress.com/" target="_blank"> <b>[Website]</b></a>
                             </p>
                         </div>
-                    </a>
+                    </div>
 
-                    <a href="https://s3-eu-west-1.amazonaws.com/melindamarian.com/Travel+List/index.html" target="_blank">
+                    <div class="project-tile">
                         <div class="project grow">
                             <h3>Travel list - my first website</h3>
                             <div class="container project-pictures">
@@ -217,9 +225,10 @@
                             </div>
                             <p>
                                 Travel list was the first website created at the beginning of my journey into tech, based on HTML and CSS. 
+                                <a href="https://s3-eu-west-1.amazonaws.com/melindamarian.com/Travel+List/index.html" target="_blank"> <b>[Website]</b></a>
                             </p>
                         </div>
-                    </a>
+                    </div>
                 </div>
             </section>
         </main>

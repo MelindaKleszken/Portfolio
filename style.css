@@ -23,6 +23,7 @@ h1, h2, h3, h4 {
 }
 h1 {
   font-size: 60px;
+  color: white;
 }
 h2 {
   font-size: 40px;
@@ -100,17 +101,6 @@ header {
 header p  {
   font-weight: 100;
 }
-header h1, header h2 {
-  color: white;
-  
-}
-.profile-img {
-  border-radius: 40%;
-  padding: 10px;
-  width: 100%;
-  max-width: 250px;
-  height:100%;
-}
 
 
 /* footer */
@@ -140,9 +130,38 @@ footer {
   background:#363538;
   color:black;
 }
+
+#welcome-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+.profile-img {
+  border-radius: 40%;
+  padding: 10px;
+  width: 100%;
+  max-width: 250px;
+  height:100%;
+}
+/*#welcome-section h1 {
+  
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}*/
 #welcome-section p{
-  padding-left: 10px;
-  color: #52d6f4
+  /*padding-left: 10px;*/
+  color: #52d6f4;
+  /*padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;*/
 }
 
 
@@ -315,8 +334,9 @@ li{
     text-align: center;
   }
   .welcome-section{
-    display: block;
-  } /*de editat aici*/
+    flex-direction: column;
+    align-content: center;
+  } 
   .about-text{
     margin: 0 15% 15px 15%;
   }
@@ -335,34 +355,11 @@ li{
     font-weight: 700;
     font-size: 80%;
   }
-/* 1200px / 16px = 75em */
-/*@media (max-width: 75em) {
-  html {
-    font-size: 60%;
-  }
-}*/
+  @media (max-width: 600px){
+    .nav-list a {
+      font-size: 0.8rem;
+      padding: 8px 8px;
 
-/* 980px / 16px = 61.25em */
-/*@media (max-width: 61.25em) {
-  html {
-    font-size: 58%;
+    }
   }
-  body {
-    text-align: center;
-  }
-  .about-text{
-    margin: 0 15% 15px 15%;
-  }
-  .about{
-    padding-top: 70px;
-  }
-}
-
-/* 460px / 16px = 28.75em */
-/*@media (max-width: 28.75em) {
-  html {
-    font-size: 55%;
-  }
-}*/
-
 }

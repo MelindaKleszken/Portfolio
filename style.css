@@ -200,8 +200,10 @@ nav a:hover{
 #about-text{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /*justify-content: center;*/
   padding: 20px 20px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .about p  {
